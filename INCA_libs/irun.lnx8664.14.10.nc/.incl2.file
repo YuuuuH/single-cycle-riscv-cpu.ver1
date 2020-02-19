@@ -1,0 +1,16 @@
+CPU.v
+/home/yuhong/computer_organization/computer_organization/computer_organization_hw/hw4/src/CPU.v
+Branch_Ctrl.v
+/home/yuhong/computer_organization/computer_organization/computer_organization_hw/hw4/src/Branch_Ctrl.v
+Decoder.v
+/home/yuhong/computer_organization/computer_organization/computer_organization_hw/hw4/src/Decoder.v
+Register_File.v
+/home/yuhong/computer_organization/computer_organization/computer_organization_hw/hw4/src/Register_File.v
+ALU_control.v
+/home/yuhong/computer_organization/computer_organization/computer_organization_hw/hw4/src/ALU_control.v
+ALU.v
+/home/yuhong/computer_organization/computer_organization/computer_organization_hw/hw4/src/ALU.v
+Immediate_Generator.v
+/home/yuhong/computer_organization/computer_organization/computer_organization_hw/hw4/src/Immediate_Generator.v
+SRAM.v
+/home/yuhong/computer_organization/computer_organization/computer_organization_hw/hw4/src/SRAM.v

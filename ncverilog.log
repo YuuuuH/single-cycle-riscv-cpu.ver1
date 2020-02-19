@@ -1,0 +1,115 @@
+ncverilog(64): 14.10-s005: (c) Copyright 1995-2014 Cadence Design Systems, Inc.
+TOOL:	ncverilog	14.10-s005: Started on Feb 11, 2020 at 11:36:56 CST
+ncverilog
+	-f presim.f
+		top_tb.v
+		../src/top.v
+		+nc64bit
+		+access+r
+Recompiling... reason: file './ALU.v' is newer than expected.
+	expected: Tue Feb 11 11:35:20 2020
+	actual:   Tue Feb 11 11:36:53 2020
+file: top_tb.v
+      $fscanf(gf, "%h\n", GOLDEN[num]);
+            |
+ncvlog: *W,NOSYST (top_tb.v,47|12): System function '$fscanf' invoked as a task. Return value will be ignored.
+file: ../src/top.v
+	module worklib.ALU:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.ALU:v <0x4460dbb8>
+			streams:   1, words:  4311
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                 11      10
+		Registers:               34      30
+		Scalar wires:            15       -
+		Vectored wires:          31       -
+		Always blocks:           10       9
+		Initial blocks:           2       2
+		Cont. assignments:       14      16
+		Pseudo assignments:      10      10
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: worklib.top_tb:v
+Loading snapshot worklib.top_tb:v .................... Done
+*Verdi* Loading libsscore_ius141.so
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+FSDB Dumper for IUS, Release Verdi_O-2018.09, Linux x86_64/64bit, 08/30/2018
+(C) 1996 - 2018 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'top.fsdb'
+*Verdi* : Begin traversing the scope (top_tb.TOP), layer (0).
+*Verdi* : Enable +struct and +mda dumping.
+*Verdi* : End of traversing.
+
+Done
+
+DM[   0] = fffffff0, pass
+DM[   1] = fffffff8, pass
+DM[   2] = 00000008, pass
+DM[   3] = 00000001, pass
+DM[   4] = 00000001, pass
+DM[   5] = 78787878, pass
+DM[   6] = 000091a2, pass
+DM[   7] = 00000003, pass
+DM[   8] = fefcfefd, pass
+DM[   9] = 10305070, pass
+DM[  10] = cccccccc, pass
+DM[  11] = 00000d9d, pass
+DM[  12] = 00000004, pass
+DM[  13] = 00000003, pass
+DM[  14] = 000001a6, pass
+DM[  15] = 00000ec6, pass
+DM[  16] = 2468b7a8, pass
+DM[  17] = 5dbf9f00, pass
+DM[  18] = 00012b38, pass
+DM[  19] = fa2817b7, pass
+DM[  20] = ff000000, pass
+DM[  21] = 000f0000, pass
+DM[  22] = 0000f000, pass
+DM[  23] = 00000f00, pass
+DM[  24] = 000000f0, pass
+DM[  25] = 0000000f, pass
+DM[  26] = 000f0000, pass
+DM[  27] = 000f0000, pass
+DM[  28] = 000f0000, pass
+DM[  29] = 000f0000, pass
+DM[  30] = 000f0000, pass
+DM[  31] = 0000000f, pass
+DM[  32] = 000000f0, pass
+DM[  33] = 00000f00, pass
+DM[  34] = 000f0003, pass
+DM[  35] = 000f0002, pass
+DM[  36] = 000f0001, pass
+DM[  37] = fffff000, pass
+DM[  38] = fffff000, pass
+DM[  39] = fffff000, pass
+DM[  40] = fffff000, pass
+DM[  41] = fffff000, pass
+DM[  42] = fffff000, pass
+DM[  43] = 1357a040, pass
+DM[  44] = 13578000, pass
+DM[  45] = fffff004, pass
+
+
+
+
+        ****************************               
+        **                        **       |__||  
+        **  Congratulations !!    **      / O.O  | 
+        **                        **    /_____   | 
+        **  Simulation PASS!!     **   /^ ^ ^ \  |
+        **                        **  |^ ^ ^ ^ |w| 
+        ****************************   \m___m__|_|
+
+
+Simulation complete via $finish(1) at time 50330 NS + 0
+./top_tb.v:66             $finish;
+ncsim> exit
+TOOL:	ncverilog	14.10-s005: Exiting on Feb 11, 2020 at 11:36:58 CST  (total: 00:00:02)
